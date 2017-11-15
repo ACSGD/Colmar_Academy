@@ -1,0 +1,29 @@
+div,
+section{
+  border: 1px solid black;
+}
+html{
+  font-family: Roboto;
+}
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+}
+
+header .content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav{
+  text-align: right;
+
+}
+nav li{
+  display: inline-block;
+}
+.mobile ul{
+  display: none;
+}
