@@ -1,13 +1,10 @@
-div,
-section{
-  border: 1px solid black;
-}
+
 html{
-  font-family: Helvetica;
+  font-family: Montserrat;
 }
+
 /*Header Menu*/
 header{
-  position: fixed;
   display: flex;
   align-items: center;
   width: 100%;
@@ -20,6 +17,7 @@ header{
   align-items: center;
   height: 32px;
   padding-left: 24px;
+  letter-spacing: 0.15em
 }
 nav{
   text-align: right;
@@ -39,10 +37,74 @@ nav a{
   display: none;
 }
 
-/*Main Information*/
+/*Main Section*/
+.container{
+  display: flex;
+}
 
-.main-banner img{
+.column-left{
   width: 60%;
-  margin: 32px 24px;
+  padding: 32px 24px;
+}
 
+.column-right{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+.image-content{
+  overflow: hidden;
+}
+
+#top-row{
+  background-color: grey;
+  float: left;
+}
+
+#top-row h1{
+ padding-top: 2em;
+ font-size: 3em;
+ font-weight: 600;
+ line-height: 1.4em;
+}
+
+#top-row h3{
+  font-size: 1.5em;
+  padding-top: 1.5em;
+  line-height: 1.4em;
+}
+
+#top-row a{
+  align-content: center;
+  font-size: 1.5em;
+}
+
+.btn{
+
+}
+
+/*Information - Main Column*/
+#second-row{
+float: left;
+}
+
+#second-row .mobile-image-content{
+  display: none;
+}
+
+.column-right .item{
+  padding: 1rem 0 1rem 1rem;
+  display: flex;
+}
+h3{
+  font-size: 1.4em;
+  font-weight: 500;
+  line-height: 2em;
 }
