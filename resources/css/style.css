@@ -1,7 +1,26 @@
 
 html{
-  font-family: Montserrat;
+  display: block;
+  font-family: 'Cabin','sans-serif';
+  font-size: 16px;
+  letter-spacing: 1.5px;
 }
+
+h1{
+ font-size: 3.2em;
+ font-weight: 700;
+}
+
+h2{
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
 
 /*Header Menu*/
 header{
@@ -19,13 +38,17 @@ header{
   padding-left: 24px;
   letter-spacing: 0.15em
 }
+header span{
+  font-size: 24px;
+  
+}
 nav{
   text-align: right;
   flex-grow: 1;
   padding-right: 24px;
 }
 
-nav span{
+nav ul li{
   display: inline-block;
   padding-left: 16px;
 }
@@ -44,14 +67,14 @@ nav a{
 
 .column-left{
   width: 60%;
-  padding: 32px 24px;
+  padding: 32px 12px 32px 24px;
 }
 
 .column-right{
   width: 40%;
   display: flex;
   flex-direction: column;
-  padding-top: 32px;
+  padding-left: 12px;
 }
 
 img{
@@ -62,49 +85,94 @@ img{
 .image-content{
   overflow: hidden;
 }
-
-#top-row{
-  background-color: grey;
+/*Top Row - Column Right*/
+#top-section{
+  background-color: #C0C0C0;
   float: left;
 }
-
-#top-row h1{
- padding-top: 2em;
- font-size: 3em;
- font-weight: 600;
- line-height: 1.4em;
+#top-section .column-right{
+  align-self: center;
 }
 
-#top-row h3{
-  font-size: 1.5em;
+#top-section .info-content{
+  width: 80%;
+}
+#top-section h1{
+  line-height: 1em;
+}
+
+#top-section h3{
   padding-top: 1.5em;
-  line-height: 1.4em;
 }
 
-#top-row a{
+#top-section a{
   align-content: center;
   font-size: 1.5em;
 }
 
-.btn{
+button{
+  width: 80%;
+  height: 2.5em;
+  align-self: center;
+  margin-top: 3em;
+  cursor: pointer;
+  font-size: 1em;
+  background-color: #616161;
 
 }
 
-/*Information - Main Column*/
-#second-row{
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+/*Second Section*/
+#second-section{
 float: left;
+background-color: white;
 }
 
-#second-row .mobile-image-content{
+#second-section .mobile-image-content{
   display: none;
 }
 
-.column-right .item{
-  padding: 1rem 0 1rem 1rem;
+#second-section h2{
+  padding: 24px 0;
+}
+#second-section h3{
+  padding: 15px 0;
+}
+/*Second Section - Column Left*/
+#second-section .column-left p{
+  line-height: 1.5em;
+  padding-bottom: 32px;
+}
+
+/*Second Section - Column Right*/
+#second-section .column-right .content{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  align-self: center;
+  line-height: 1.2em;
+}
+
+.column-right .image-content{
+  width: 35%;
+  height: auto;
+  margin: 32px;
+}
+
+#second-section .column-right .item{
+  padding: 0 1em 2em 1em;
   display: flex;
 }
-h3{
-  font-size: 1.4em;
-  font-weight: 500;
-  line-height: 2em;
+
+#second-section .column-right .item:hover{
+  background-color: #D0D0D0;
+}
+
+.column-right a{
+  padding-top: 8px;
 }
