@@ -17,7 +17,7 @@ h2{
 }
 
 h3{
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: 500;
 }
 
@@ -40,7 +40,7 @@ header{
 }
 header span{
   font-size: 24px;
-  
+
 }
 nav{
   text-align: right;
@@ -85,11 +85,15 @@ img{
 .image-content{
   overflow: hidden;
 }
-/*Top Row - Column Right*/
+
+/*Top Section*/
+/*Introduction*/
 #top-section{
   background-color: #C0C0C0;
   float: left;
 }
+
+/*Top Section - Column Right*/
 #top-section .column-right{
   align-self: center;
 }
@@ -97,6 +101,7 @@ img{
 #top-section .info-content{
   width: 80%;
 }
+
 #top-section h1{
   line-height: 1em;
 }
@@ -118,7 +123,6 @@ button{
   cursor: pointer;
   font-size: 1em;
   background-color: #616161;
-
 }
 
 button:hover{
@@ -138,22 +142,32 @@ background-color: white;
 
 #second-section h2{
   padding: 24px 0;
+
 }
 #second-section h3{
-  padding: 15px 0;
+  padding-bottom: 10px;
+  line-height: 1.2em;
 }
 /*Second Section - Column Left*/
 #second-section .column-left p{
   line-height: 1.5em;
-  padding-bottom: 32px;
+  padding-bottom: 1em;
+}
+
+#second-section span{
+  padding-bottom: 2em;
 }
 
 /*Second Section - Column Right*/
+/*Information*/
+#second-section .column-right{
+  padding-top: 1em;
+}
+
 #second-section .column-right .content{
   width: 65%;
   display: flex;
   flex-direction: column;
-  align-content: left;
   align-self: center;
   line-height: 1.2em;
 }
@@ -161,12 +175,12 @@ background-color: white;
 .column-right .image-content{
   width: 35%;
   height: auto;
-  margin: 32px;
+  padding: 1em;
 }
 
 #second-section .column-right .item{
-  padding: 0 1em 2em 1em;
   display: flex;
+
 }
 
 #second-section .column-right .item:hover{
@@ -175,4 +189,46 @@ background-color: white;
 
 .column-right a{
   padding-top: 8px;
+}
+
+/*Third Section*/
+/*Course offerings*/
+#third-section{
+  clear: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #D0D0D0;
+}
+
+.main-column{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  margin: 0 72px;
+
+
+}
+#third-section .main-column .item{
+  width: 30%;
+}
+
+#third-section .image-content{
+  height: auto;
+  padding: 16px 0;
+}
+#third-section h2{
+  padding: 32px 0;
+  text-align: center;
+}
+
+#third-section h3{
+  padding-bottom: 16px;
+  font-size: 1.5em;
+}
+#third-section span{
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+
 }
