@@ -4,23 +4,35 @@ html{
   font-family: 'Cabin','sans-serif';
   font-size: 16px;
   letter-spacing: 1.5px;
+  color: #586069;
 }
 
 h1{
  font-size: 3.2em;
  font-weight: 700;
+ color: black;
 }
 
 h2{
   font-size: 2.2em;
   font-weight: 600;
+  color: black;
 }
 
 h3{
   font-size: 1.4em;
   font-weight: 500;
+  color: black;
 }
 
+a{
+  color: #586069;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #F15151;
+}
 
 /*Header Menu*/
 header{
@@ -40,7 +52,7 @@ header{
 }
 header span{
   font-size: 24px;
-
+  color: #586069;
 }
 nav{
   text-align: right;
@@ -52,29 +64,26 @@ nav ul li{
   display: inline-block;
   padding-left: 16px;
 }
-nav a{
-  text-decoration: none;
-}
 
 .mobile-nav{
   display: none;
 }
 
-/*Main Section*/
+/*All Sections*/
 .container{
   display: flex;
 }
 
 .column-left{
   width: 60%;
-  padding: 32px 12px 32px 24px;
+  padding: 2em 0.75em 2em 1.5em;
 }
 
 .column-right{
   width: 40%;
   display: flex;
   flex-direction: column;
-  padding-left: 12px;
+  padding: 1em 0 1em 0.75em;
 }
 
 img{
@@ -122,12 +131,18 @@ button{
   margin-top: 3em;
   cursor: pointer;
   font-size: 1em;
-  background-color: #616161;
+  font-weight: 500;
+  color: #F5F5F5;
+  background-color: #141414;
+  border-radius: 0.25em;
+  border: 0;
+  letter-spacing: 2px;
+
 }
 
 button:hover{
-  background-color: black;
-  color: white;
+  background-color: #616161;
+
 }
 
 /*Second Section*/
@@ -141,7 +156,7 @@ background-color: white;
 }
 
 #second-section h2{
-  padding: 24px 0;
+  padding: 1.5em 0;
 
 }
 #second-section h3{
@@ -154,9 +169,6 @@ background-color: white;
   padding-bottom: 1em;
 }
 
-#second-section span{
-  padding-bottom: 2em;
-}
 
 /*Second Section - Column Right*/
 /*Information*/
@@ -180,7 +192,6 @@ background-color: white;
 
 #second-section .column-right .item{
   display: flex;
-
 }
 
 #second-section .column-right .item:hover{
@@ -199,6 +210,8 @@ background-color: white;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #D0D0D0;
+  padding: 2em 4.5em 2em 4.5em;
+
 }
 
 .main-column{
@@ -206,7 +219,6 @@ background-color: white;
   flex-wrap: wrap;
   justify-content: space-around;
   position: relative;
-  margin: 0 72px;
 
 }
 
@@ -226,7 +238,7 @@ background-color: white;
   padding: 1em;
 }
 #third-section h2{
-  padding: 1.5em 0 1em 0;
+  padding-bottom: 1em;
 }
 
 #third-section h3{
@@ -242,4 +254,71 @@ background-color: white;
 #third-section p{
   padding-top: 1em;
   line-height: 1.2em;
+}
+
+/*Last Section*/
+#last-section{
+  padding: 2em 0;
+}
+
+#last-section h2{
+  text-align: center;
+}
+
+/* Last Section - Column left*/
+#last-section .content h2{
+  text-align: left;
+  padding: 1.5em 0;
+}
+
+#last-section .column-left p{
+  line-height: 1.5em;
+}
+
+video{
+  width: 100%;
+  display: block;
+}
+
+/*Last Section - Column right*/
+#last-section .column-right{
+  padding-top: 1em;
+}
+
+#last-section .column-right .item{
+  display: flex;
+}
+
+#last-section .column-right .item:hover{
+  background-color: #D0D0D0;
+}
+
+#last-section .column-right .content{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  line-height: 1.2em;
+}
+
+#last-section .column-right .image-content{
+  width: 35%;
+  height: auto;
+  padding: 1em;
+}
+
+#last-section h3{
+padding-bottom: 10px;
+line-height: 1.2em;
+}
+
+/*footer*/
+footer{
+  display: flex;
+  background-color: #eaecef;
+  padding: 1em 1.5em 1.5em 1.5em;
+}
+
+footer .legal{
+  text-align: right;
 }
