@@ -1,4 +1,3 @@
-
 html{
   display: block;
   font-family: 'Cabin','sans-serif';
@@ -43,6 +42,7 @@ header{
   background-color: white;
   height: 64px;
 }
+
 .logo{
   display: flex;
   align-items: center;
@@ -50,10 +50,12 @@ header{
   padding-left: 24px;
   letter-spacing: 0.15em
 }
+
 header span{
   font-size: 24px;
   color: #586069;
 }
+
 nav{
   text-align: right;
   flex-grow: 1;
@@ -65,7 +67,7 @@ nav ul li{
   padding-left: 16px;
 }
 
-.mobile-nav{
+.mobile{
   display: none;
 }
 
@@ -112,7 +114,7 @@ img{
 }
 
 #top-section h1{
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 #top-section h3{
@@ -259,6 +261,7 @@ background-color: white;
 /*Last Section*/
 #last-section{
   padding: 2em 0;
+  float: left;
 }
 
 #last-section h2{
@@ -321,4 +324,86 @@ footer{
 
 footer .legal{
   text-align: right;
+}
+
+/* media queries - mobile version*/
+@media only screen and (max-width: 480px){
+  header .desktop{
+    display: none;
+  }
+
+  header .mobile{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header span{
+    display: none;
+  }
+
+/*Top-Section*/
+  #top-section .container{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #top-section .column-left{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #top-section .column-right{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #top-section .info-content{
+    width: 100%;
+    line-height: 2em;
+    margin: 1em;
+  }
+
+  #top-section{
+    font-size: 70%;
+    text-align: left;
+  }
+
+  button{
+    margin: 1.5em 0.25em 2em 1.5em;
+  }
+
+/*second-section*/
+
+  #second-section .column-left{
+  display: none;
+  }
+
+  #second-section .column-right{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #second-section .item{
+    flex-direction: column;
+    padding: 1em 1em;
+  }
+
+  #second-section .column-right .mobile-image-content{
+    display: block;
+  }
+
+  #second-section .image-content{
+    display: none;
+  }
+
+  #second-section .column-right .content{
+    width: 100%;
+    padding-top: 1em;
+  }
+
+
+
+
 }
