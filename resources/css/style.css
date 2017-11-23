@@ -150,7 +150,8 @@ button:hover{
 /*Second Section*/
 #second-section{
 float: left;
-background-color: white;
+background-color: seashell;
+border-top: 1px solid seashell;
 }
 
 #second-section .mobile-image-content{
@@ -229,6 +230,8 @@ background-color: white;
   background-color: white;
   padding-bottom: 1em;
   margin: 1em;
+  box-sizing: border-box;
+  flex:auto;
 }
 
 #third-section .image-content{
@@ -262,6 +265,8 @@ background-color: white;
 #last-section{
   padding: 2em 0;
   float: left;
+  background-color: seashell;
+  border-top: 1px solid seashell;
 }
 
 #last-section h2{
@@ -403,7 +408,62 @@ footer .legal{
     padding-top: 1em;
   }
 
+  /*Third Section*/
+  #third-section{
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+  }
 
+  #third-section h2{
+    padding: 1em 1em 0 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
 
+  #third-section h3{
+    padding: 1em;
+    background-color: #D0D0D0;
+  }
+
+  .main-column{
+    padding: 1em;
+  }
+
+  #third-section .main-column .item{
+    background-color: inherit;
+    box-sizing: border-box;
+    flex: auto;
+    width: 100%;
+    margin: 0;
+  }
+
+  #third-section .content{
+    padding: 0;
+    margin: 0;
+  }
+
+  #third-section .image-content,
+  #third-section span,
+  #third-section p,
+  #last-section .column-right,
+  #last-section .content,
+  footer .legal{
+    display: none;
+  }
+
+/*Last Section*/
+#last-section .column-left{
+    width: 100%;
+    margin: 0;
+    padding: 1em 0 1.5em 0;
+  }
+
+/*Footer*/
+footer span{
+  padding: 1em 0 1em 0;
+  }
+}
 
 }
